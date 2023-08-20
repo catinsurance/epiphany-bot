@@ -1,0 +1,35 @@
+# The bot token is located in a .env file.
+# BOT_TOKEN=whatever
+
+# For potential future stuff, right now it does nothing.
+# It's a list of user ids (as strings).
+[bot]
+admins = ["845735976974549012"]
+
+# Channel ids
+[channels]
+bug_reports = "1139341310826926100"
+
+[strings]
+
+[strings.bug_reports_message]
+color = "#8f0e0e"
+title = "Thank you for the bug report! Please read below."
+paragraphs = [
+    """
+### **Run `EpiphanyDiag.exe` and send the `EpiphanyDiagnostics.tar.gz` file that is generated!**
+Running this program will gather any Isaac log files, a list of your mods, a list of your enabled mods, and the save data for Epiphany. This will *greatly* help us with diagnosing your issue, as your log files hold valuable information on what went wrong, knowing what mods you have enabled help us identify incompatibilities, and your save data can help with save-related issues.
+
+To run `EpiphanyDiag.exe`, you must first **extract** the `EpiphanyDiag.exe.zip` file to the Epiphany folder. On Windows, this is as simple as right-clicking the file and selecting "Extract All".
+
+After that, just run the program and send the `EpiphanyDiagnostics.tar.gz` file generated.
+    """,
+    """
+### **If possible, please provide a screenshot or video of the bug.**
+A screenshot or video can provide the context required for us to fix the issue.
+    """,
+    """
+### **Try Mod Error Container.**
+A likely cause of the bug could be another mod malfunctioning and causing Epiphany to break as well. If you don't have it installed or enabled already, please try out [Mod Error Container](https://steamcommunity.com/sharedfiles/filedetails/?id=2917616737) and see if it prevents the issue from happening.
+    """
+]
