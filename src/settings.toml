@@ -4,11 +4,11 @@
 # For potential future stuff, right now it does nothing.
 # It's a list of user ids (as strings).
 [bot]
-admins = ["845735976974549012"]
+admins = ["555860100107993098"]
 
 # Channel ids
 [channels]
-bug_reports = "1139341310826926100"
+bug_reports = "1055118688447119420"
 
 [strings]
 
